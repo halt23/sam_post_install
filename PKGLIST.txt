@@ -1,0 +1,10 @@
+base-devel
+sddm
+plasma-desktop
+plasma-nm
+git
+atom
+xdotool
+code
+aseqdump
+kitty
