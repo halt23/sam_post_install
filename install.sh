@@ -13,8 +13,9 @@ echo '
 
 '
 read -p 'enter leguage: ' x
-if [[ $x = 'en' ]]; then
-  # remade
+if [[ $x = 'nl' ]]; then
+  source installNl.sh
+  
 else
   echo "good choiche"
   #statements
