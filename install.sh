@@ -12,11 +12,17 @@ echo '
 
 
 '
-read -p 'enter leguage: ' x
-if [[ $x = 'nl' ]]; then
-  source installNl.sh
-  
-else
-  echo "good choiche"
-  #statements
-fi
+
+  language=false
+  while [[ $language = false ]]; do
+    read -p 'ente language: ' language
+
+    if [[ $language = 'en' ]]; then
+      source installEn.sh
+    elif [[ $language = 'nl' ]]; then
+      source installNl.sh
+    else
+      language=false
+
+    fi
+  done
