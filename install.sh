@@ -15,7 +15,7 @@ echo '
 
   language=false
   while [[ $language = false ]]; do
-    read -p 'ente language: ' language
+    read -p 'enter language: ' language
 
     if [[ $language = 'en' ]]; then
       source installEn.sh
