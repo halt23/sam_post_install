@@ -22,6 +22,7 @@ while [[ $language = false ]]; do
   read -p 'enter language/vul taal in: ' language
   echo
 
+<<<<<<< HEAD
   if [[ $language = 'en' ]]; then
     source installEn.sh
   elif [[ $language = 'nl' ]]; then
@@ -31,6 +32,11 @@ while [[ $language = false ]]; do
     echo 'de taal die je invoerde word niet ondersteunt probeerd het opnieuw.'
     echo
     language=false
+=======
+  language=false
+  while [[ $language = false ]]; do
+    read -p 'enter language: ' language
+>>>>>>> bdcd3d09027fc022c5c221581bb29efdf434c3cc
 
 
 

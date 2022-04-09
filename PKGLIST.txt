@@ -6,6 +6,22 @@ git
 atom
 xdotool
 code
-aseqdump
 kitty
+<<<<<<< HEAD
+=======
+blender
+wget
+curl
+meld
+jack2
+a2jmidid
+aseqdump
+ardour
+harvid
+kdenlive
+obs-studio
+hugo
+
+
+>>>>>>> bdcd3d09027fc022c5c221581bb29efdf434c3cc
 
