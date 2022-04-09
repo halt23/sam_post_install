@@ -12,11 +12,13 @@ wget
 curl
 meld
 jack2
+a2jmidid
 aseqdump
 ardour
 harvid
 kdenlive
 obs-studio
+hugo
 
 
 
