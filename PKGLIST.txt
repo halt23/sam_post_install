@@ -8,3 +8,4 @@ xdotool
 code
 aseqdump
 kitty
+

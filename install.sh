@@ -1,6 +1,8 @@
 #!/bin/bash
 
-
+start() { \
+clear
+language=false
 echo '
   _____  ____  ___ ___      ____   ___   _____ ______      ____  ____   _____ ______   ____  _      _
  / ___/ /    ||   |   |    |    \ /   \ / ___/|      |    |    ||    \ / ___/|      | /    || |    | |
@@ -12,17 +14,29 @@ echo '
 
 
 '
+echo ' laten we beginnen met je taal/lets start with you language'
+echo
+echo 'Nederlands en Engels worden ondersteund/Dutch and Englisch are suported.'
+echo 'je kunt dus nl of en invullen/so you can enter en or nl.'
+while [[ $language = false ]]; do
+  read -p 'enter language/vul taal in: ' language
+  echo
 
-  language=false
-  while [[ $language = false ]]; do
-    read -p 'ente language: ' language
+  if [[ $language = 'en' ]]; then
+    source installEn.sh
+  elif [[ $language = 'nl' ]]; then
+    source installNl.sh
+  else
+    echo 'the language you enterd is not suported please try again.'
+    echo 'de taal die je invoerde word niet ondersteunt probeerd het opnieuw.'
+    echo
+    language=false
 
-    if [[ $language = 'en' ]]; then
-      source installEn.sh
-    elif [[ $language = 'nl' ]]; then
-      source installNl.sh
-    else
-      language=false
 
-    fi
-  done
+
+  fi
+done
+
+}
+
+start error || 'error while setting up'
