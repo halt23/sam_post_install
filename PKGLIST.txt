@@ -7,8 +7,6 @@ atom
 xdotool
 code
 kitty
-<<<<<<< HEAD
-=======
 blender
 wget
 curl
@@ -22,6 +20,4 @@ kdenlive
 obs-studio
 hugo
 
-
->>>>>>> bdcd3d09027fc022c5c221581bb29efdf434c3cc
 
